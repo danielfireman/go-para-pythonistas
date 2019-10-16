@@ -32,3 +32,17 @@ $GOPATH/bin/present
 ```
 
 Pronto, agora é só apontar o navegador para https://127.0.0.1:3999.
+
+## Mais materiais sobre Go
+
+### Em português
+
+- [Um tour por Go](https://go-tour-br.appspot.com/welcome/1)
+- [Go efetivo](http://www.golangbr.org/doc/go_efetivo)
+
+### Em inglês
+
+- [Guia da Google sobre Revisões de Código](https://github.com/golang/go/wiki/CodeReviewComments)
+- [Guia da Uber](https://github.com/uber-go/guide/blob/master/style.md)
+
+Conhece alguma material bacana que não está aqui? Ficaremos muito felizes com sua contribuição/PR!
