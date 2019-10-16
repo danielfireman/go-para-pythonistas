@@ -1,0 +1,74 @@
+Go para Pythonistas
+[web_app]
+
+Daniel Fireman
+Professor no IFAL
+@daniellfireman
+danielfireman@gmail.com
+
+* Objetivo desse tutorial
+
+Aumentar sua vontade de aprender Go
+
+.image web_app/img/gopher.jpg
+
+* Introdução
+
+* Coisas que eu gosto em Python
+
+- Fácil de ler e entender
+- Comunidade muito bacana
+- Muitas bibliotecas com grande qualidade
+- Rápido o suficiente para a maioria dos casos: principalmente quando compilador
+- Extensível: via C e assembly
+
+* O que não gosto
+
+- Pode ser lento em alguns casos
+- Migrar entre versões demanda trabalho
+- Não é amigo de concorrência
+- GIL
+
+* Sobre tipagem dinâmica
+
+Pode ser bacana pois é concisa, mas:
+
+	a = "olá"
+	b = 1
+	a = 2 # Hã?
+
+Tipagem estática pode ser verboso, como Java or C++:
+
+	Boom boom = new Boom();
+
+Mas também temos tipagem estática com inferrência de tipos, como Go:
+
+	a := "olá"
+	b := 1
+	a = 2  // Erro de compilação!
+
+Tipagem estática em Python? Dá uma olhada em [[http://www.mypy-lang.org/][mypy]] e [[http://cython.org/][Cython]].
+
+* Go é massa
+
+* Go não é tão massa
+
+* Conclusão
+
+Go se parece com Python:
+
+- simples
+- flexível
+- divertido
+- biblioteca padrão robusta
+
+Mas também é diferente em diversas coisas:
+
+- rápido
+- concorrente
+- estaticamente tipado
+
+* Outras Apresentações/Inspirações
+
+.link https://talks.golang.org/2013/go4python.slide#1 Go para Pythonistas (Francesc Campoy)
+.link https://talks.golang.org/2012/zen.slide#1 Go and the Zen of Python (Andrew Gerrand)
