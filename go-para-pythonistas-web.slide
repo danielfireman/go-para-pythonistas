@@ -1,0 +1,34 @@
+Go para Pythonistas
+[web_app]
+
+Daniel Fireman
+IFAL
+@daniellfireman
+danielfireman@gmail.com
+
+* Introdução
+
+* Python é massa
+
+- Fácil de ler e entender até para não-pythonistas
+- Comunidade muito bacana
+- Muitas bibliotecas com grande qualidade
+- Tipagem dinâmica: fácil de prototipar
+- _Duck_ _typing_: mais flexibilidade no design
+- Relativamente rápido: principalmente quando compilador
+- Extensível: via C e assembly
+
+* Python não é tão massa
+
+- Linguagem dinâmica + tipos pode levar a erros graves
+  Ex.: concatenar um string com um número
+- Pode ser lento em alguns casos
+- Migrar entre versões demanda trabalho
+- Apenas uma linha de execução
+- GIL
+
+* Python Zen
+
+* Go é massa
+
+* Go não é tão massa
