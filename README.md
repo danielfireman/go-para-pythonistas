@@ -13,9 +13,6 @@ As funcionalidades do servidor serão as seguintes:
 
 - Conta no [Github](github.com)
 - [VSCode](https://code.visualstudio.com/)
-- [Python 3.5+](https://www.python.org/downloads/)
-- [Plugin python para VSCode](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-- [Flask](http://flask.pocoo.org/docs/installation/)
 - [Go](http://www.golangbr.org/doc/instalacao)
 - [Plugin Go para VSCode](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go)
 

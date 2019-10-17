@@ -8,7 +8,8 @@ danielfireman@gmail.com
 
 * Objetivo desse tutorial
 
-Aumentar sua vontade de aprender Go
+Criar uma aplicação usando web simples usando Go
+Aumentar a curiosidade de vocês por Go
 
 .image web_app/img/gopher.jpg
 
@@ -19,15 +20,35 @@ Aumentar sua vontade de aprender Go
 - Fácil de ler e entender
 - Comunidade muito bacana
 - Muitas bibliotecas com grande qualidade
-- Rápido o suficiente para a maioria dos casos: principalmente quando compilador
+- Rápido o suficiente para a maioria dos casos (principalmente quando compilado)
 - Extensível: via C e assembly
 
 * O que não gosto
 
-- Pode ser lento em alguns casos
 - Migrar entre versões demanda trabalho
-- Não é amigo de concorrência
-- GIL
+- Pode ser lento em alguns casos
+- Implantação - Gerenciamento de dependência
+- Não é amigo e threads/concorrência
+.link http://youtu.be/ph374fJqFPE Inside the Python GIL, by David Beazley
+- Muita mágica! (e.g.: `__magic__`: `**kargs`, `__getattr__`)
+.link https://rszalski.github.io/magicmethods/ Lista de métodos mágicos em Python
+
+* O que é Go
+
+- jovem, mas nem tanto (lançada em novembro de 2009, 1.0 em Março 2012)
+- simples, super fácil de ler e aprender
+- biblioteca padrão poderosa, e muito mais desenvolvido pela comunidade
+- código fonte aberto (BSD)
+- comunidade extraordinária, inclusão e diversidade em primeiro lugar 
+- extensível, via C e Assembly
+
+* E ainda ...
+
+- fácil de migrar entre versões (`go` `fix`)
+- gerenciador de dependências integrado
+- cmpila para código de máquina, estaticamente ligado
+- pensada para concorrência, mas ainda tem as primitivas conhecidas
+- suporte fantástico de ferramentas (lint, vet, race detector)
 
 * Sobre tipagem dinâmica
 
@@ -49,9 +70,80 @@ Mas também temos tipagem estática com inferrência de tipos, como Go:
 
 Tipagem estática em Python? Dá uma olhada em [[http://www.mypy-lang.org/][mypy]] e [[http://cython.org/][Cython]].
 
-* Go é massa
 
-* Go não é tão massa
+* Quem usa Go?
+
+Some names that I could fit on one slide:
+
+- Bitly
+- Canonical
+- CloudFlare
+- Google
+- Heroku
+- Iron.io
+- SoundCloud
+- New York Times
+
+E muito mais!
+
+* hello.go
+
+    package main
+
+    import (
+        "net/http"
+        "github.com/labstack/echo/v4"
+    )
+
+    func hello(c echo.Context) error {
+        return c.String(http.StatusOK, "Hello, World!")
+    }
+
+    func main() {
+        e := echo.New()
+        e.GET("/", hello)
+        e.Logger.Fatal(e.Start(":8000"))
+    }
+
+* hello.py
+
+    #!/usr/bin/python3.5
+    from flask import Flask
+    app = Flask(__name__)
+
+
+    @app.route('/')
+    def hello():
+        return "Olá, Pythonistas!"
+
+    if __name__ == '__main__':
+        app.run(debug=True, port=8000)
+
+* Mão na massa!
+
+* API REST para listas de coisas a fazer (TODO)
+
+.code -edit web_app/todo.go / INICIO MAIN/,/ FIM MAIN/
+
+* Structs e Listas
+
+.code -edit web_app/todo.go / INICIO STRUCT/,/ FIM STRUCT/
+
+* Novo Item
+
+.code -edit web_app/todo.go / INICIO NOVO/,/ FIM NOVO/
+
+* Novo Item (cont.)
+
+Sucesso
+
+    curl -X PUT -H 'Content-Type: application/json' -d '{"desc":"Tapioca"}' http://localhost:8000
+
+Erro
+
+    curl -X PUT -H 'Content-Type: application/json' -d '{"desc":""}' http://localhost:8000
+
+    curl -X PUT http://localhost:8000
 
 * Conclusão
 
@@ -61,12 +153,14 @@ Go se parece com Python:
 - flexível
 - divertido
 - biblioteca padrão robusta
+- comunidade sensacional
 
 Mas também é diferente em diversas coisas:
 
 - rápido
 - concorrente
 - estaticamente tipado
+- gerenciamento de dependências nativo
 
 * Outras Apresentações/Inspirações
 
