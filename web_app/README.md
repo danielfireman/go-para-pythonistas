@@ -1,0 +1,3 @@
+# Servidor REST de Lista de Coisas a Fazer (TODO List)
+
+Esse é um tutorial que visa apresentar coinceitos básicos da linguagem de programação [Go](https://golang.org/) para quem já sabe [Python](https://www.python.org/). O objetivo é ser "mão-na-massa", ou seja, novos conceitos serão apresentados num contexto específico de implementação. Nessa versão do tutorial, implementaremos um servidor REST que provê uma API para uma lista de coisas a fazer (TODO list).

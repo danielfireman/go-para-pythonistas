@@ -1,6 +1,10 @@
-# Servidor REST de Lista de Coisas a Fazer (TODO List)
+# Go para Pythonistas
 
-Esse é um tutorial que visa apresentar coinceitos básicos da linguagem de programação [Go](https://golang.org/) para quem já sabe [Python](https://www.python.org/). O objetivo é ser "mão-na-massa", ou seja, novos conceitos serão apresentados num contexto específico de implementação. Nessa versão do tutorial, implementaremos um servidor REST que provê uma API para uma lista de coisas a fazer (TODO list).
+Esse repo guarda uma série de tutoriais de Go voltado para Pythonistas. A ideia principal é ser hands on e apresentar conceitos através da criação de um programa.
+
+## Sabores
+
+- Web App: [Página Principal](https://github.com/danielfireman/go-para-pythonistas/tree/master/web_app) | [Download Zip](https://github.com/danielfireman/go-para-pythonistas/raw/master/web_app/web_app_preso.zip)
 
 ## Dependências
 
@@ -36,3 +40,7 @@ Pronto, agora é só apontar o navegador para https://127.0.0.1:3999.
 - [Guia da Uber](https://github.com/uber-go/guide/blob/master/style.md)
 
 Conhece alguma material bacana que não está aqui? Ficaremos muito felizes com sua contribuição/PR!
+
+## Deseja contribuir ou tem uma ideia?
+
+Abre uma issue e vamos conversar!
