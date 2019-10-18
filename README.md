@@ -1,13 +1,6 @@
-# Markdown Server Python
+# Servidor REST de Lista de Coisas a Fazer (TODO List)
 
-Esse é um tutorial que visa apresentar coinceitos básicos da linguagem de programação [Go](https://golang.org/) para quem já sabe [Python](https://www.python.org/). O objetivo é ser "mão-na-massa", ou seja, novos conceitos serão apresentados num contexto específico de implementação. Nessa versão do tutorial, implementaremos um servidor web que renderiza páginas escritas em [Markdown](https://en.wikipedia.org/wiki/Markdown). Será uma espécie de [Wiki](https://pt.wikipedia.org/wiki/Wiki), porém com a sintaxe Markdown.
-
-As funcionalidades do servidor serão as seguintes:
-
-- Nova página (`/edita/:nome_pagina`): abre um formulário que permite que a pessoa usuária insira ou edite o conteúdo Markdown da página especificada
-- Remover página (`/remove/:nome_pagina`): Remove a página especificada
-- Renderizar página (`/:página`): Dado o nome da página na URL o servidor deve renderizá-la
-- Listar páginas (`/lista`): Lista as páginas armazenadas
+Esse é um tutorial que visa apresentar coinceitos básicos da linguagem de programação [Go](https://golang.org/) para quem já sabe [Python](https://www.python.org/). O objetivo é ser "mão-na-massa", ou seja, novos conceitos serão apresentados num contexto específico de implementação. Nessa versão do tutorial, implementaremos um servidor REST que provê uma API para uma lista de coisas a fazer (TODO list).
 
 ## Dependências
 
