@@ -204,6 +204,29 @@ Invocação
 .image web_app/img/bored.gif
 .caption by [[https://giphy.com][giphy.com]]
 
+# A ideia aqui é pedir que as pessoas tentem fazer e estimular
+# a leitua do godoc. Daí ir via tentativa e erro, guiado pelo compilador
+# e exemplos.
+
+* Código: Flags
+
+.code web_app/cliente.go / INICIO FLAGS/,/ FIM FLAGS/
+
+* Código: Flags
+
+.code web_app/cliente.go / INICIO MAIN/,/ FIM MAIN/
+
+* Invocação
+
+Adicionando item:
+
+    go run cliente.go --metodo=PUT --corpo={\"desc\":\"tapioca\"}
+
+
+Listando itens:
+
+    go run cliente.go --metodo=GET --url http://localhost:8000/lista
+
 * Conclusão
 
 Go se parece com Python:
@@ -223,5 +246,6 @@ Mas também é diferente em diversas coisas:
 
 * Outras Apresentações/Inspirações
 
+.link https://speakerdeck.com/ramalho/go-a-visao-de-um-pythonista Go: a visão de um Pythonista (Luciano Ramalho)
 .link https://talks.golang.org/2013/go4python.slide#1 Go para Pythonistas (Francesc Campoy)
 .link https://talks.golang.org/2012/zen.slide#1 Go and the Zen of Python (Andrew Gerrand)

@@ -45,6 +45,7 @@ func novo(c echo.Context) error {
 
 	// Estrutura condicional e checagem de erros
 	if err != nil || t.Desc == "" {
+		fmt.Println(err)
 		return c.String(http.StatusBadRequest, "erro criando novo todo")
 	}
 
