@@ -22,3 +22,15 @@ $GOPATH/bin/present
 ```
 
 Pronto, agora é só apontar o navegador para https://127.0.0.1:3999.
+
+## Executar aplicação
+
+```sh
+go run todo.go
+```
+
+## Executar testes
+
+```sh
+go test -v todo*.go
+```
