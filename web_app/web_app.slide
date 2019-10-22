@@ -20,27 +20,27 @@ Aumentar a curiosidade de vocês por Go
 
 * Coisas que eu gosto em Python
 
-- Fácil de ler e entender
-- Comunidade muito bacana
-- Muitas bibliotecas com grande qualidade
-- Rápido o suficiente para a maioria dos casos (principalmente quando compilado)
-- Extensível: via C e assembly
+- fácil de ler e entender
+- comunidade muito bacana
+- muitas bibliotecas com grande qualidade
+- rápido o suficiente para a maioria dos casos (principalmente quando compilado)
+- extensível: via C e assembly
 
 * O que não gosto
 
-- Migrar entre versões demanda trabalho
-- Pode ser lento em alguns casos
-- Implantação - Gerenciamento de dependência
-- Não é amigo e threads/concorrência
+- migrar entre versões demanda trabalho
+- pode ser lento em alguns casos
+- implantação - Gerenciamento de dependência
+- não é amigo e threads/concorrência
 .link http://youtu.be/ph374fJqFPE Inside the Python GIL, by David Beazley
-- Muita mágica! (e.g.: `__magic__`: `**kargs`, `__getattr__`)
+- muita mágica! (e.g.: `__magic__`: `**kargs`, `__getattr__`)
 .link https://rszalski.github.io/magicmethods/ Lista de métodos mágicos em Python
 
 * O que é Go
 
 - jovem, mas nem tanto (lançada em novembro de 2009, 1.0 em Março 2012)
 - simples, super fácil de ler e aprender
-- biblioteca padrão poderosa, e muito mais desenvolvido pela comunidade
+- biblioteca padrão poderosa e muito mais desenvolvido pela comunidade
 - código fonte aberto (BSD)
 - comunidade extraordinária, inclusão e diversidade em primeiro lugar 
 - extensível, via C e Assembly
@@ -49,7 +49,7 @@ Aumentar a curiosidade de vocês por Go
 
 - fácil de migrar entre versões (`go` `fix`)
 - gerenciador de dependências integrado
-- cmpila para código de máquina, estaticamente ligado
+- compila para código de máquina, estaticamente ligado
 - pensada para concorrência, mas ainda tem as primitivas conhecidas
 - suporte fantástico de ferramentas (lint, vet, race detector)
 
@@ -65,7 +65,7 @@ Tipagem estática pode ser verboso, como Java or C++:
 
 	Boom boom = new Boom();
 
-Mas também temos tipagem estática com inferrência de tipos, como Go:
+Mas também temos tipagem estática com inferência de tipos, como Go:
 
 	a := "olá"
 	b := 1
@@ -170,7 +170,7 @@ Para rodar
 : numa struct como uma classe leve, que suporta composição e polimorfismo, porém não suporta
 : herança de código. Não vamos entrar fundo em structs, isso é assunto de um outro tutorial.
 
-: Slices são bem conhecidos no mundo Python. Quase todas as operações aqui se mantem, só que são
+: Slices são bem conhecidos no mundo Python. Quase todas as operações aqui se mantém, só que são
 : feitas de forma ligeiramente diferente. Ah, não temos list compreension em Go :(
 
 * Código
@@ -242,7 +242,7 @@ Invocação
 .caption by [[https://giphy.com][giphy.com]]
 
 : A ideia aqui é pedir que as pessoas tentem fazer e estimular
-: a leitua do godoc. Daí ir via tentativa e erro, guiado pelo compilador
+: a leitura do godoc. Daí ir via tentativa e erro, guiado pelo compilador
 : e exemplos.
 
 * Código: Flags
@@ -278,7 +278,7 @@ Mas também é diferente em diversas coisas:
 
 - rápido
 - concorrente
-- estaticamente tipado
+- estaticamente tipada
 - gerenciamento de dependências nativo
 
 * Outras Apresentações/Inspirações
@@ -286,3 +286,5 @@ Mas também é diferente em diversas coisas:
 .link https://speakerdeck.com/ramalho/go-a-visao-de-um-pythonista Go: a visão de um Pythonista (Luciano Ramalho)
 .link https://talks.golang.org/2013/go4python.slide#1 Go para Pythonistas (Francesc Campoy)
 .link https://talks.golang.org/2012/zen.slide#1 Go and the Zen of Python (Andrew Gerrand)
+
+    
